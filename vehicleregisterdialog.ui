@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>vehicleRegisterDialog</class>
+ <widget class="QDialog" name="vehicleRegisterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>369</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Plate Number:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="provinceShortNameComboBox">
+       <item>
+        <property name="text">
+         <string>鄂</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>京</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>津</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>沪</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>渝</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>冀</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>晋</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>辽</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>吉</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>黑</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>苏</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>浙</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>皖</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>闽</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>赣</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>鲁</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>豫</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>湘</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>粤</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>琼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>川</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>贵</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>云</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>陕</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>甘</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>青</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>藏</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>桂</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>蒙</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>宁</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>新</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>琼</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="inputPlateNumberLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Vehicle Type:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="inputVehicleTypeLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="insertPushButton">
+       <property name="text">
+        <string>Insert</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="removePushButton">
+       <property name="text">
+        <string>Remove</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="vehicleShowTableWidget"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

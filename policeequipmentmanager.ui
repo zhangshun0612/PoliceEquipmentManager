@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PoliceEquipmentManager</class>
+ <widget class="QMainWindow" name="PoliceEquipmentManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PoliceEquipmentManager</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_9">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QGroupBox" name="lendGunGroupBox">
+            <property name="title">
+             <string>Lend Gun</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>Gun to Lend:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="gunToLendLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>Lender</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="firearmLenderLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Manager</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="firearmManagerLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="lendGunPushButton">
+                 <property name="text">
+                  <string>Lend Gun</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="returnGunGroupBox">
+            <property name="title">
+             <string>Return Gun</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>Gun to Return:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="gunToReturnLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="returnGunPushButton">
+                 <property name="text">
+                  <string>Return Gun</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="mantenanceGroupBox">
+            <property name="title">
+             <string>Maintenance Gun</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>Gun to Maintenance:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="gunToMaintenanceLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>Maintenance Date:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateTimeEdit" name="maintenanceDateDateTimeEdit">
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="maintenanceGunPushButton">
+                 <property name="text">
+                  <string>Maintenance</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QRadioButton" name="allShowRadioButton">
+            <property name="text">
+             <string>All</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="instoreShowRadioButton">
+            <property name="text">
+             <string>InStore</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="outstoreShowRadioButton">
+            <property name="text">
+             <string>OutStore</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="needMaintenaceShowRadioButton">
+            <property name="text">
+             <string>Need Maintenace</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="notNeedMaintenanceShowRadioButton">
+            <property name="text">
+             <string>Not Need Maintenance</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="firearmsShowTableWidget"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QTableWidget" name="vehicleShowTableWidget"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="lendCarPushButton">
+            <property name="text">
+             <string>Lend</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="returnCarPushButton">
+            <property name="text">
+             <string>Return</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="washCarPushButton">
+            <property name="text">
+             <string>Wash</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <item>
+           <widget class="QGroupBox" name="lendEquipmentGroupBox">
+            <property name="title">
+             <string>Lend Equipment</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="text">
+                  <string>Equipment to Lend:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="equipmentToLendLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>Lender</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="equipmentLenderLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>Manager</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="equipmentManagerLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <spacer name="horizontalSpacer_10">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="lendEquipmentPushButton">
+                 <property name="text">
+                  <string>Lend Equipment</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>Return Equipment</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>Equipment to Return</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="chooseLineEdit" name="equipmentToReturnLineEdit"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item>
+                <spacer name="horizontalSpacer_11">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="returnEquipmentPushButton">
+                 <property name="text">
+                  <string>Return Equipment</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="otherEquipmentShowTableWidget"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuRegister">
+    <property name="title">
+     <string>Manage</string>
+    </property>
+    <addaction name="actionRegister_Firearm_Class"/>
+    <addaction name="actionRegister_Police_Staff"/>
+    <addaction name="actionRegister_Manager"/>
+    <addaction name="actionRegister_Firearm"/>
+    <addaction name="actionRegister_Vehicle"/>
+    <addaction name="actionRegister_Other_Equipment"/>
+    <addaction name="actionModify_Manager_Password"/>
+   </widget>
+   <widget class="QMenu" name="menuRefresh">
+    <property name="title">
+     <string>Operation</string>
+    </property>
+    <addaction name="actionRefresh"/>
+   </widget>
+   <widget class="QMenu" name="menuRecord">
+    <property name="title">
+     <string>Record</string>
+    </property>
+    <addaction name="actionRecord_Inquiry"/>
+   </widget>
+   <widget class="QMenu" name="menuShow">
+    <property name="title">
+     <string>Show</string>
+    </property>
+    <addaction name="actionShowFirearm"/>
+    <addaction name="actionShowVehicle"/>
+    <addaction name="actionShowOtherEquipment"/>
+   </widget>
+   <addaction name="menuShow"/>
+   <addaction name="menuRegister"/>
+   <addaction name="menuRecord"/>
+   <addaction name="menuRefresh"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionRegister_Firearm_Class">
+   <property name="text">
+    <string>Register Firearm Class</string>
+   </property>
+  </action>
+  <action name="actionRegister_Police_Staff">
+   <property name="text">
+    <string>Register Police Staff</string>
+   </property>
+  </action>
+  <action name="actionRegister_Firearm">
+   <property name="text">
+    <string>Register Firearm</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="actionRegister_Manager">
+   <property name="text">
+    <string>Register Manager</string>
+   </property>
+  </action>
+  <action name="actionRecord_Inquiry">
+   <property name="text">
+    <string>Record Inquiry</string>
+   </property>
+  </action>
+  <action name="actionRegister_Vehicle">
+   <property name="text">
+    <string>Register Vehicle</string>
+   </property>
+  </action>
+  <action name="actionShowFirearm">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>showFirearm</string>
+   </property>
+  </action>
+  <action name="actionShowVehicle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>showVehicle</string>
+   </property>
+  </action>
+  <action name="actionModify_Manager_Password">
+   <property name="text">
+    <string>Modify Manager Password</string>
+   </property>
+  </action>
+  <action name="actionRegister_Other_Equipment">
+   <property name="text">
+    <string>Register Other Equipment</string>
+   </property>
+  </action>
+  <action name="actionShowOtherEquipment">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>show Other Equipment</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>chooseLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">chooselineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
